@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  # 1. 后端服务
+  backend:
+    build: ./backend
+    container_name: fde-backend
+    ports:
+      - "8000:8000"  # 依然保留 8000 端口方便测试
+    environment:
+      - ZHIPU_API_KEY=9b80bd2658d94b39baa2ec9ded90b05b.btYDfz4ZdZCJoCqt  # 🌟 替换！
+
+  # 2. 前端服务
+  frontend:
+    build: ./my-fde-app
+    container_name: fde-frontend
+    ports:
+      - "80:80"      # 把电脑的 80 端口暴露给前端容器
+    depends_on:
+      - backend      # 等后端启动了，前端再启动
