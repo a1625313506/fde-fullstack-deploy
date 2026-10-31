@@ -31,3 +31,4 @@ docker compose up -d --build
 🔗 关联仓库
 • 前端仓库: https://github.com/a1625313506/my-fde-app.git
 • 后端仓库: https://github.com/a1625313506/my-fde-backend.git
+👉 [点击查看 1 分钟项目演示视频](https://www.bilibili.com/video/BV1Kpxr6fES7/?vd_source=be42a59399e8d93658e3fcfe8113e3c5)
